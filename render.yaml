@@ -12,9 +12,7 @@ services:
     region: frankfurt
     plan: free
     healthCheckPath: /health
-    dockerCommand: >-
-      alembic upgrade head &&
-      uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-10000}
+    dockerCommand: sh scripts/start-render.sh
     envVars:
       - key: DATABASE_URL
         fromDatabase:
