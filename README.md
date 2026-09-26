@@ -2,6 +2,13 @@
 
 An asynchronous FastAPI service for private contact collections with PostgreSQL, Redis caching, email verification, password recovery, role-based access, and rotating JWT access/refresh tokens.
 
+## Live deployment
+
+- Swagger documentation: https://secure-contact-api.onrender.com/docs
+- Health check: https://secure-contact-api.onrender.com/health
+
+The application is deployed on Render with PostgreSQL and a Redis-compatible Valkey cache. The free instance may require up to 50 seconds to wake after inactivity.
+
 ## Highlights
 
 - Async FastAPI, SQLAlchemy 2, Psycopg 3, and Alembic
